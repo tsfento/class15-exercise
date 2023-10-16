@@ -5,6 +5,7 @@ import { AboutComponent } from "./about/about.component";
 import { ContactComponent } from "./contact/contact.component";
 import { BobComponent } from "./about/bob/bob.component";
 import { SusanComponent } from "./about/susan/susan.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +15,8 @@ const appRoutes: Routes = [
     { path: 'susan', component: SusanComponent },
   ] },
   { path: 'contact', component: ContactComponent },
+  { path: 'not-found', component: NotFoundComponent },
+  { path: '**', redirectTo: '/not-found' },
 ];
 
 @NgModule({
