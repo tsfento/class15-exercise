@@ -1,0 +1,13 @@
+<div class="text-center mt-2 pb-2" style="border-bottom: 1px solid black">
+  <button class="btn btn-primary me-2"
+  routerLinkActive="route-active"
+  [routerLinkActiveOptions]="{exact: true}"
+  routerLink="/">Home</button>
+  <button class="btn btn-primary me-2"
+  routerLinkActive="route-active"
+  routerLink="/about">About</button>
+  <button class="btn btn-primary"
+  routerLinkActive="route-active"
+  routerLink="/contact">Contact</button>
+</div>
+<router-outlet></router-outlet>
